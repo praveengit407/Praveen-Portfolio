@@ -13,6 +13,10 @@ import "aos/dist/aos.css";
 import Main from './pages/main/main';
 import PortfolioDetails from './pages/portfolio-details/portfolio-details';
 import { ToastContainer } from 'react-toastify';
+
+import emailjs from "@emailjs/browser";
+
+
 function App() {
 useEffect(() => {
   AOS.init({
@@ -30,6 +34,23 @@ useEffect(() => {
     window.removeEventListener('scroll', handleScroll);
   };
 }, []);
+
+
+useEffect(() => {
+    if (!sessionStorage.getItem("visited")) {
+      emailjs.send(
+        "service_o70dly6",
+        "template_c04xws8",
+        {
+          message: "Someone viewed your portfolio",
+          time: new Date().toLocaleString()
+        },
+        "feHzimTWuASWVU7OM"
+      );
+
+      sessionStorage.setItem("visited", "true");
+    }
+  }, []);
 
   return (
      <BrowserRouter>
