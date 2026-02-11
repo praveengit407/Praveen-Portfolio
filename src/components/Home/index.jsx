@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import HomePageImage from '../../assets/img/profile/profile-1.webp';
 
 function Home() {
   useEffect(() => {
@@ -79,7 +80,7 @@ function Home() {
           <div className="col-lg-6">
             <div className="hero-image">
               <img
-                src="/src/assets/img/profile/profile-1.webp"
+                src={HomePageImage}
                 alt="Portfolio Hero Image"
                 className="img-fluid"
                 data-aos="zoom-out"
