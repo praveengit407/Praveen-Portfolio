@@ -121,7 +121,7 @@ l-64 0 0 65 0 65 65 0 c56 0 66 -3 76 -22z"/>
          <a  target='_blank' href="mailto:praveenpraveen04200@gmail.com" class="twitters"><i className="bi bi-envelope "></i></a>
                             <a  target='_blank' href="https://www.facebook.com/bill.praveen.3958" class="twitters"><i className="bi bi-facebook "></i></a>
                             <a  target='_blank' href="https://www.instagram.com/mr_praveen_401"><i className="bi bi-instagram "></i></a>
-                            <a  target='_blank' href="https://www.linkedin.com/in/gurupandimurugan58/"><i className="bi bi-linkedin "></i></a>
+                            {/* <a  target='_blank' href="https://www.linkedin.com/in/gurupandimurugan58/"><i className="bi bi-linkedin "></i></a> */}
                             <a  target='_blank' href="https://github.com/praveengit407"><i className="bi bi-github "></i></a>
       </div>
 
