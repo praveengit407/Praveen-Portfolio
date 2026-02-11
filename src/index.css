@@ -1,0 +1,15 @@
+/* common */
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.header-social-links a {
+    padding-right: 5px;
+    font-size: 15px !important;
+}
+.header-social-links a i {
+    font-size: 17px !important;
+}
+.navmenu ul li a {
+    font-size: 15px;
+}

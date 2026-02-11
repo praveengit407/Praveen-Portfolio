@@ -1,0 +1,26 @@
+.map-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.map-content {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}

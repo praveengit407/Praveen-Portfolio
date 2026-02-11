@@ -1,0 +1,85 @@
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.project-modal-content {
+  background:#edeaea;
+  width: 95%;
+  max-width: 900px;
+  max-height: 90vh;
+  border-radius: 14px;
+  padding: 25px;
+  overflow-y: auto;
+  position: relative;
+}
+
+/* FLEX LAYOUT */
+.project-flex {
+  display: flex;
+  gap: 25px;
+}
+
+/* LEFT IMAGE */
+.project-left {
+  flex: 1;
+}
+
+.project-left img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+/* RIGHT CONTENT */
+.project-right {
+  flex: 2;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.project-right {
+  flex: 2;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .project-flex {
+    flex-direction: column;
+  }
+}
+
+.modal-heading-project {
+  font-size: 16px;
+  color: #555;
+  font-weight: 800;
+}
