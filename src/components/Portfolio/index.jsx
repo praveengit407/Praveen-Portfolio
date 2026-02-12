@@ -133,6 +133,48 @@ images: [HermonImage, HermonImage1],
               </div>
             </div>
 
+              <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web-application">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src={ClientManagement} class="img-fluid" alt="" loading="lazy"/>
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href={ClientManagement} class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <Link to={""} 
+               onClick={() => {
+  setModalData({
+    title: "Client Management",
+    images: [ClientManagement],
+    tech: ["Html", "Css", "Bootstrap", "Javascript", "React"],
+
+    overview:
+      "Client Management system sends automated expiry reminders via SMS or email, supporting stable client handling.",
+
+    challenges:
+      "Managing client data efficiently, ensuring timely notifications, and maintaining data integrity.",
+
+    solutions:
+      "Implemented a robust client management system with automated expiry reminders and centralized data handling.",
+
+    category: "Web Application",
+    url: "https://clientmanagement.hermonsolutions.com/",
+  });
+
+  setShowModal(true);
+}}
+
+                      class="details-link"><i class="bi bi-arrow-right"></i></Link>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Application</span>
+                  <h3>Client Management</h3>
+                  <p>Client Management system sends automated expiry reminders via SMS or email, supporting stable client handling.</p>
+                </div>
+              </div>
+            </div>
+
              <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web">
               <div class="portfolio-card">
                 <div class="portfolio-image">
@@ -258,6 +300,8 @@ images: [SkandaImage,SkandaImage1],
                 </div>
               </div>
             </div>
+
+              
 
 {/* Web Application */}
 
@@ -430,47 +474,7 @@ images: [SkandaImage,SkandaImage1],
             </div>
 
 
-        <div class="col-lg-4 col-md-4 portfolio-item isotope-item filter-web-application">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src={ClientManagement} class="img-fluid" alt="" loading="lazy"/>
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href={ClientManagement} class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
-                      <Link to={""} 
-               onClick={() => {
-  setModalData({
-    title: "Client Management",
-    images: [ClientManagement],
-    tech: ["Html", "Css", "Bootstrap", "Javascript", "React"],
-
-    overview:
-      "Client Management system sends automated expiry reminders via SMS or email, supporting stable client handling.",
-
-    challenges:
-      "Managing client data efficiently, ensuring timely notifications, and maintaining data integrity.",
-
-    solutions:
-      "Implemented a robust client management system with automated expiry reminders and centralized data handling.",
-
-    category: "Web Application",
-    url: "https://clientmanagement.hermonsolutions.com/",
-  });
-
-  setShowModal(true);
-}}
-
-                      class="details-link"><i class="bi bi-arrow-right"></i></Link>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <span class="category">Web Application</span>
-                  <h3>Client Management</h3>
-                  <p>Client Management system sends automated expiry reminders via SMS or email, supporting stable client handling.</p>
-                </div>
-              </div>
-            </div>
+    
        
             
             {/* End Portfolio Item */}

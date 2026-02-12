@@ -12,13 +12,28 @@ function Contact() {
  
   const sendEmail = (e) => {
     e.preventDefault(); 
+
+      const formData = new FormData(form.current);
+
+      console.log(formData);
+      
+
+  const name = formData.get("user_name");
+  const email = formData.get("user_email");
+  const message = formData.get("message");
+  const subject = formData.get("subject");
+
+  if (!name || !email || !message) {
+    toast.error("Please fill in all fields!");
+    return;
+  }
  
     emailjs
       .sendForm(
-        "service_o70dly6", // Replace with your EmailJS service ID
-        "template_9544q4a", // Replace with your EmailJS template ID
+        "service_o70dly6", 
+        "template_9544q4a", 
         form.current,
-        "feHzimTWuASWVU7OM" // Replace with your EmailJS public key
+        "feHzimTWuASWVU7OM" 
       )
       .then(
         (result) => {

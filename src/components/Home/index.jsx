@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import HomePageImage from '../../assets/img/profile/profile-1.webp';
+import DevImage from '../../assets/img/hand-coding-amico.png'
 
 function Home() {
   useEffect(() => {
@@ -53,7 +54,7 @@ function Home() {
     <section id="hero" className="hero section">
       <div className="container" data-aos="fade-up" data-aos-delay="100">
         <div className="row align-items-center content">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div className="col-lg-7" data-aos="fade-up" data-aos-delay="200">
             <h2>Crafting Digital Experiences with Passion</h2>
             <p className="lead">
               Transforming ideas into elegant solutions through creative design and innovative development
@@ -77,19 +78,21 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
-            <div className="hero-image">
-              <img
-                src={HomePageImage}
-                alt="Portfolio Hero Image"
-                className="img-fluid"
-                data-aos="zoom-out"
-                data-aos-delay="300"
-              />
-              <div className="shape-1"></div>
-              <div className="shape-2"></div>
-            </div>
-          </div>
+
+
+       <div className="col-lg-5 d-flex align-items-center justify-content-center">
+ <div className="hero-image-wrapper" data-aos="zoom-out" data-aos-delay="300">
+    <img
+    style={{maxWidth:'90'}}
+      src={DevImage}
+      alt="3D Developer"
+      className="img-fluid hero-img"
+    />
+  </div>
+</div>
+
+
+
         </div>
       </div>
     </section>

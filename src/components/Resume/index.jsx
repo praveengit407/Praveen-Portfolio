@@ -103,7 +103,7 @@ function Resume() {
     </div>
 
     {/* <!-- BSc Current --> */}
-    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+    {/* <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
       <div class="timeline-left">
         <h4 class="company">Alagappa University</h4>
         <span class="period">2025 - Present</span>
@@ -115,7 +115,7 @@ function Resume() {
           Currently pursuing Bachelor of Science, focusing on software development and modern web technologies.
         </p>
       </div>
-    </div>
+    </div> */}
 
   </div>
 </div>
