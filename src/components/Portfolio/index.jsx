@@ -413,7 +413,7 @@ images: [SkandaImage,SkandaImage1],
       "Implemented a robust database system with secure access controls and automated reporting features for efficient school management.",
 
     category: "Web Site",
-    url: "https://smsystem.hermonsolutions.com/",
+    url: "http://smsystem.hermonsolutions.com/",
   });
 
   setShowModal(true);
